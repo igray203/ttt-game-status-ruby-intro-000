@@ -32,7 +32,7 @@ def full?(array)
   end
 end
 
-def all?(array)
+def draw?(array)
   if full?(array) == true && won?(array) == false
     true
   else
