@@ -14,7 +14,7 @@ def won?(array)
     position_1 = array[win_index_1]
     position_2 = array[win_index_2]
     position_3 = array[win_index_3]
-    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+    if position_1 == "X" && position_2 == "X" && position_3 == "X" || position_1 == "O" && position_2 == "O" && position_3 == "O"
         return win_combination
       else
         nil
