@@ -7,24 +7,28 @@ end
 
 WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]]
 
-#win_combination = ["x", "X", "X"]
-
 def won?
-  for each win_combination in WIN_COMBINATIONS
-    # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
-    # grab each index from the win_combination that composes a win.
-    win_index_1 = win_combination[0]
-    win_index_2 = win_combination[1]
-    win_index_3 = win_combination[2]
+  win_combination_x = ["X", "X", "X"]
+  win_combination_o = ["O", "O", "O"]
+  WIN_COMBINATIONS.detect do |combination|
+    combination == win_combination_x || combination == win_combination_o
+  end
+end
 
-    position_1 = board[win_index_1] # load the value of the board at win_index_1
-    position_2 = board[win_index_2] # load the value of the board at win_index_2
-    position_3 = board[win_index_3] # load the value of the board at win_index_3
+for each win_combination in WIN_COMBINATIONS
+  # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
+  # grab each index from the win_combination that composes a win.
+  win_index_1 = win_combination[0]
+  win_index_2 = win_combination[1]
+  win_index_3 = win_combination[2]
 
-    if position_1 == "X" && position_2 == "X" && position_3 == "X"
-      return win_combination # return the win_combination indexes that won.
-    else
-      false
-    end
+  position_1 = board[win_index_1] # load the value of the board at win_index_1
+  position_2 = board[win_index_2] # load the value of the board at win_index_2
+  position_3 = board[win_index_3] # load the value of the board at win_index_3
+
+  if position_1 == "X" && position_2 == "X" && position_3 == "X"
+    return win_combination # return the win_combination indexes that won.
+  else
+    false
   end
 end
