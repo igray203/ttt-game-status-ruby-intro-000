@@ -19,7 +19,7 @@ def won?
     winning_rows(combination).string?
   end
 end
-
+puts won?
 #puts won?
 #for each win_combination in WIN_COMBINATIONS
   # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
