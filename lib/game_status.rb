@@ -19,7 +19,8 @@ def won?
     winning_rows(combination).string?
   end
 end
-
+array = ["X","X","X","","","","","",""]
+puts win?
 #for each win_combination in WIN_COMBINATIONS
   # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
   # grab each index from the win_combination that composes a win.
