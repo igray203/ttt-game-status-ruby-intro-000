@@ -4,7 +4,7 @@ def position_taken?(board, index)
 end
 
 # Define your WIN_COMBINATIONS constant
-WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]]
+WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [6,4,2]]
 
 def won?(array)
 #win_combination = [WIN_COMBINATION[0], WIN_COMBINATION[1], WIN_COMBINATION[2], WIN_COMBINATION[3], WIN_COMBINATION[4], WIN_COMBINATION[5], WIN_COMBINATION[6], WIN_COMBINATION[7]]
