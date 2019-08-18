@@ -16,7 +16,7 @@ def won?(board)
 #  win_index_7 = WIN_COMBINATIONS[6]
 #  win_index_8 = WIN_COMBINATIONS[7]
   WIN_COMBINATIONS.find do |winner|
-    winner == ["X","X","X"] || winner == ["O","O","O"]
+    winner == ["X","X","X"]
   end
 end
 
