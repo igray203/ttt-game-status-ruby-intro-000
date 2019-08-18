@@ -15,8 +15,8 @@ def won?(array)
 #  win_index_6 = WIN_COMBINATIONS[5]
 #  win_index_7 = WIN_COMBINATIONS[6]
 #  win_index_8 = WIN_COMBINATIONS[7]
-  WIN_COMBINATIONS.find do |winner|
-    winner == ["X", "X", "X"]
+  WIN_COMBINATIONS.each do |winner|
+    winner == ["X","X","X"]
   end
 end
 
