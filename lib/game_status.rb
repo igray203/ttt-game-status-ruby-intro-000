@@ -31,3 +31,11 @@ def full?(array)
     end
   end
 end
+
+def all?(array)
+  if full?(array) == true && won?(array) == false
+    true
+  else
+    false
+  end
+end
