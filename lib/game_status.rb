@@ -18,7 +18,6 @@ def won?
   WIN_COMBINATIONS.detect do |combination|
     winning_rows(combination).string?
   end
-  return won?
 end
 
 #puts won?
