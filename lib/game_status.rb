@@ -11,7 +11,7 @@ def won?(array)
 #win_index_1 = win_combination[0][0]
 #win_index_2 = win_combination[0][1]
 #win_index_3 = win_combination[0][2]
-  WIN_COMBINATIONS.each do |win_combination|
+  WIN_COMBINATIONS.find do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
