@@ -6,21 +6,20 @@ end
 # Define your WIN_COMBINATIONS constant
 
 WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]]
+def winning_rows(array)
+  if array == ["X", "X", "X"] || array == ["O", "O", "O"]
+    return win
+  else
+    return nil
+  end
+end
 
 def won?
   WIN_COMBINATIONS.detect do |combination|
-    def winning_rows(array)
-      if array == ["X", "X", "X"] || array == ["O", "O", "O"]
-        return win
-      else
-        return nil
-      end
-    end
     winning_rows(combination).string?
   end
 end
-array = [0,8,9]
-puts won?
+
 #for each win_combination in WIN_COMBINATIONS
   # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
   # grab each index from the win_combination that composes a win.
