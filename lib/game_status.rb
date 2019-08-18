@@ -7,9 +7,8 @@ end
 WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]]
 
 def won?(array)
-  win_combo = ["X","X","X"]
   WIN_COMBINATIONS.each do |winner|
-    if array(winner) == win_combo
+    if array(winner) == "X"
       return winner
     else
       false
