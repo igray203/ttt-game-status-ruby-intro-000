@@ -35,6 +35,8 @@ end
 def draw?(array)
   if full?(array) != true && won?(array) != false
     false
+  elsif full?(array) == true && won?(array) == false
+    false
   else
     true
   end
